@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scenery/Pitch.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Ball/Ball.tscn" type="PackedScene" id=2]
 
 [node name="Level" type="Spatial"]
 
@@ -8,3 +9,6 @@
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.70052, 11.7491 )
+
+[node name="Ball" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.77559, 0 )
